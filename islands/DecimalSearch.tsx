@@ -6,15 +6,15 @@ import { tw } from "@twind";
 
 import { parseDecimal } from "../utils/util.ts";
 
-export default function DecimalSearch() {
+export default function DecimalSearch(props: any) {
   const [val, setVal] = useState("");
 
   return (
     <>
-      <div>
+      <div {...props}>
         <div class={tw`flex`}>
           <input
-            class={tw("w-full mr-2 p-2 border border-gray-300 rounded-md")}
+            class={tw("mr-2 p-2 border border-gray-300 rounded-md w-full")}
             value={val}
             // @ts-ignore: fix
             onChange={(event) => setVal(event.target.value)}

@@ -6,7 +6,7 @@ import { tw } from "@twind";
 const range = (start: number, stop: number) =>
   Array.from({ length: stop - start + 1 }, (_, i) => start + (i));
 
-export function LeftDecimal(props: { data: number }) {
+export function LeftDecimal(props: any) {
   const num = props.data;
 
   const data = [2, 8, 16].map((n) => {
@@ -22,10 +22,10 @@ export function LeftDecimal(props: { data: number }) {
     };
   });
   return (
-    <div class={tw`sm:w-full md:w-8/12 my-2`}>
+    <div {...props}>
       <div class={tw`mx-2 bg-white p-4 rounded-lg`}>
         <h1 class={tw`text(2xl gray-800) mb-4`}>
-          10進数「{num}」の2~36進数変換 [2進数 | 8進数 | 16進数]
+          10進数「{num}」の2〜36進数変換 [2進数 | 8進数 | 16進数]
         </h1>
         <div class={tw`overflow-scroll`}>
           <table class={tw`table-auto w-full border`}>

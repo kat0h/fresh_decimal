@@ -34,12 +34,9 @@ export default function Decimal(props: PageProps) {
       <div class={tw`bg-indigo-100`}>
         <Header />
         <div class={tw`p-2`}>
-          {/* 二列 */}
           <div class={tw`flex flex-wrap`}>
-            {/* 左 */}
-            <LeftDecimal data={num} />
-            {/* 右 */}
-            <RightBar />
+            <LeftDecimal data={num} class={tw`sm:w-full md:w-8/12 my-2`} />
+            <RightBar class={tw`sm:w-full md:w-4/12 my-2`}/>
           </div>
         </div>
       </div>
