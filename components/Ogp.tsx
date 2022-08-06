@@ -17,7 +17,7 @@ export function Ogp(props: Params) {
       <meta property="og:description" content={props.description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={props.url} />
-      <meta property="og:image" content="/opg.png" />
+      <meta property="og:image" content={new URL("/ogp.png", props.url).href} />
     </>
   );
 }
