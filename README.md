@@ -1,6 +1,6 @@
 # fresh project
 
-**LINK** ![CLICK HERE!](https://radixconv.deno.dev)
+**LINK** [CLICK HERE!](https://radixconv.deno.dev)
 
 ### Usage
 
