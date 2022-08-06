@@ -6,7 +6,7 @@ import DecimalSearch from "../islands/DecimalSearch.tsx";
 
 export function RightBar(props: any) {
   const data = [
-    [1,1000],
+    [1, 1000],
     [1001, 2000],
     [2001, 3000],
     [3001, 4000],
@@ -107,7 +107,7 @@ export function RightBar(props: any) {
     [97001, 98000],
     [98001, 99000],
     [99001, 100000],
-  ]
+  ];
   return (
     <div {...props}>
       <div class={tw`mx-2 bg-white p-4 rounded-lg mb-2`}>

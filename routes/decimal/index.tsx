@@ -6,8 +6,8 @@ export const handler: Handlers<number | null> = {
     return new Response("", {
       status: 303,
       headers: {
-        Location: "/"
-      }
-    })
+        Location: "/",
+      },
+    });
   },
 };

@@ -16,17 +16,20 @@ function sliceByNumber<T>(array: T[], n: number): T[][] {
 export function RangeNum(props: any) {
   return (
     <table class={tw`w-full`}>
-      {
-        sliceByNumber(range(props.from, props.to), 5).map((d) => (
-          <tr>{
-            d.map((dd) => (
-              <td class={tw`border px-4 py-2 text-center`}>
-                <a class={tw`underline text-blue-500 hover:opacity-75`} href={`/decimal/${dd}`}>{dd.toLocaleString()}</a>
-              </td>
-            ))
-          }</tr>
-        ))
-      }
+      {sliceByNumber(range(props.from, props.to), 5).map((d) => (
+        <tr>
+          {d.map((dd) => (
+            <td class={tw`border px-4 py-2 text-center`}>
+              <a
+                class={tw`underline text-blue-500 hover:opacity-75`}
+                href={`/decimal/${dd}`}
+              >
+                {dd.toLocaleString()}
+              </a>
+            </td>
+          ))}
+        </tr>
+      ))}
     </table>
   );
 }
