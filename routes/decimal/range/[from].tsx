@@ -17,7 +17,7 @@ import { Ogp } from "../../../components/Ogp.tsx";
 export default function Decimal(props: PageProps) {
   const { from } = props.params;
   const fro = parseDecimal(from);
-  const TITLE = `{fro}〜{fro+1000}`;
+  const TITLE = `${fro}〜${fro+1000}`;
   return (
     <>
       <Head>

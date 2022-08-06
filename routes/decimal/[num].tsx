@@ -28,7 +28,7 @@ export default function Decimal(props: PageProps) {
   if (num == null) {
     return <div>404</div>;
   }
-  const TITLE = `10進数「{num}」の基数変換`;
+  const TITLE = `10進数「${num}」の基数変換`;
   return (
     <>
       <Head>
