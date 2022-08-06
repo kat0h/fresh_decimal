@@ -12,15 +12,18 @@ import { LeftDecimal } from "../../../components/LeftDecimal.tsx";
 import { RightBar } from "../../../components/RightBar.tsx";
 import { RangeNum } from "../../../components/RangeNum.tsx"
 import { Adsense } from "../../../components/Adsense.tsx"
+import { Ogp } from "../../../components/Ogp.tsx"
 
 export default function Decimal(props: PageProps) {
   const { from } = props.params;
   const fro = parseDecimal(from);
+  const TITLE = `{fro}〜{fro+1000}`
   return (
     <>
       <Head>
-        <title>{fro}〜{fro+1000}</title>
+        <title>{TITLE}</title>
         <Adsense />
+        <Ogp title={TITLE} description="基数変換-jp 2〜36進数対応" url={props.url.href} />
       </Head>
       <div class={tw`bg-indigo-100`}>
         <Header />

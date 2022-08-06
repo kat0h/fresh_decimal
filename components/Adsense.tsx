@@ -1,6 +1,5 @@
 /** @jsx h */
 import { h } from "preact";
-import { tw } from "@twind";
 
 export function Adsense() {
   const ADURL = Deno.env.get("ADURL")

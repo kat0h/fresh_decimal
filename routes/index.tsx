@@ -9,13 +9,16 @@ import { Header } from "../components/Header.tsx";
 import { LeftTop } from "../components/LeftTop.tsx"
 import { RightBar } from "../components/RightBar.tsx";
 import { Adsense } from "../components/Adsense.tsx"
+import { Ogp } from "../components/Ogp.tsx"
 
-export default function Home() {
+export default function Home(props: PageProps) {
+  const TITLE = `基数変換-jp 2〜36進数まで対応`
   return (
     <>
       <Head>
-        <title>基数変換-jp 2〜36進数まで対応</title>
+        <title>{TITLE}</title>
         <Adsense />
+        <Ogp title={TITLE} description="基数変換-jp 2〜36進数対応" url={props.url.href} />
       </Head>
       <div class={tw`bg-indigo-100`}>
         <Header />
