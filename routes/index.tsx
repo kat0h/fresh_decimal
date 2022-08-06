@@ -6,15 +6,16 @@ import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 import { Header } from "../components/Header.tsx";
-import DecimalSearch from "../islands/DecimalSearch.tsx";
 import { LeftTop } from "../components/LeftTop.tsx"
 import { RightBar } from "../components/RightBar.tsx";
+import { Adsense } from "../components/Adsense.tsx"
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>基数変換-jp 2〜36進数まで対応</title>
+        <Adsense />
       </Head>
       <div class={tw`bg-indigo-100`}>
         <Header />

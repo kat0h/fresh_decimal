@@ -11,6 +11,7 @@ import { Header } from "../../../components/Header.tsx";
 import { LeftDecimal } from "../../../components/LeftDecimal.tsx";
 import { RightBar } from "../../../components/RightBar.tsx";
 import { RangeNum } from "../../../components/RangeNum.tsx"
+import { Adsense } from "../../../components/Adsense.tsx"
 
 export default function Decimal(props: PageProps) {
   const { from } = props.params;
@@ -19,6 +20,7 @@ export default function Decimal(props: PageProps) {
     <>
       <Head>
         <title>{fro}〜{fro+1000}</title>
+        <Adsense />
       </Head>
       <div class={tw`bg-indigo-100`}>
         <Header />

@@ -9,6 +9,7 @@ import { parseDecimal } from "../../utils/util.ts";
 import { Header } from "../../components/Header.tsx";
 import { LeftDecimal } from "../../components/LeftDecimal.tsx";
 import { RightBar } from "../../components/RightBar.tsx";
+import { Adsense } from "../../components/Adsense.tsx"
 
 export const handler: Handlers<number | null> = {
   GET(_, ctx) {
@@ -30,6 +31,7 @@ export default function Decimal(props: PageProps) {
     <>
       <Head>
         <title>10進数「{num}」の基数変換</title>
+        <Adsense />
       </Head>
       <div class={tw`bg-indigo-100`}>
         <Header />
