@@ -4,13 +4,16 @@
 
 import * as $0 from "./routes/decimal/[num].tsx";
 import * as $1 from "./routes/index.tsx";
+import * as $$0 from "./islands/DecimalSearch.tsx";
 
 const manifest = {
   routes: {
     "./routes/decimal/[num].tsx": $0,
     "./routes/index.tsx": $1,
   },
-  islands: {},
+  islands: {
+    "./islands/DecimalSearch.tsx": $$0,
+  },
   baseUrl: import.meta.url,
 };
 
