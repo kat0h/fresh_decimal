@@ -3,6 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 
 import DecimalSearch from "../islands/DecimalSearch.tsx";
+import Ad from "../islands/Ad.tsx"
 
 export function RightBar(props: any) {
   const data = [
@@ -113,6 +114,7 @@ export function RightBar(props: any) {
       <div class={tw`mx-2 bg-white p-4 rounded-lg mb-2`}>
         <DecimalSearch />
       </div>
+      <Ad></Ad>
       <div class={tw`mx-2 bg-white p-4 rounded-lg my-2`}>
         <h2>一覧</h2>
         <ul class={tw`pl-6`}>

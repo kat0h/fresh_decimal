@@ -6,7 +6,8 @@ import * as $0 from "./routes/decimal/[num].tsx";
 import * as $1 from "./routes/decimal/index.tsx";
 import * as $2 from "./routes/decimal/range/[from].tsx";
 import * as $3 from "./routes/index.tsx";
-import * as $$0 from "./islands/DecimalSearch.tsx";
+import * as $$0 from "./islands/Ad.tsx";
+import * as $$1 from "./islands/DecimalSearch.tsx";
 
 const manifest = {
   routes: {
@@ -16,7 +17,8 @@ const manifest = {
     "./routes/index.tsx": $3,
   },
   islands: {
-    "./islands/DecimalSearch.tsx": $$0,
+    "./islands/Ad.tsx": $$0,
+    "./islands/DecimalSearch.tsx": $$1,
   },
   baseUrl: import.meta.url,
 };
